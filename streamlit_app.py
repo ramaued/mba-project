@@ -30,6 +30,11 @@ try:
 
     with col3:
         if not authentication_status:
+            st.markdown("\n")
+            st.markdown("\n")
+            st.markdown("\n")
+            st.markdown("\n")
+            st.markdown("\n")
             sign_up()
 
     info1, info2, info3, info4 = st.columns(4)
