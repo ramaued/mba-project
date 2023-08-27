@@ -4,7 +4,7 @@ import streamlit_authenticator as stauth
 from auth import sign_up, fetch_users
 from apriori import runApriori, dataFromFile, to_str_results
 
-st.set_page_config(page_title='Home - MBA Project', layout='wide', initial_sidebar_state='expanded')
+st.set_page_config(page_title='MBA Project', layout='wide', initial_sidebar_state='expanded')
 
 try:
     users = fetch_users()
