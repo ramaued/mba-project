@@ -105,4 +105,4 @@ try:
                 st.error('Username tidak ada, silakan Sign Up!')
 
 except:
-    st.warning('Halaman tidak dapat dimuat, coba yang lain!')
+    st.warning('Halaman tidak dapat dimuat, coba lain waktu!')
