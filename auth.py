@@ -38,7 +38,7 @@ def get_usernames():
 
 
 def validate_email(email):
-    pattern = "([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+"
+    pattern = "^[\w.-]+@([\w-]+\.)+[\w-]{2,4}$"
 
     if re.match(pattern, email):
         return True
@@ -46,7 +46,7 @@ def validate_email(email):
 
 
 def validate_username(username):
-    pattern = "^[A-Za-z][A-Za-z0-9_]{4,14}$/"
+    pattern = "^[A-Za-z][A-Za-z0-9_]{4,14}$"
     if re.match(pattern, username):
         return True
     return False
