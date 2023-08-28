@@ -46,7 +46,7 @@ def validate_email(email):
 
 
 def validate_username(username):
-    pattern = "^[a-zA-Z0-9]*$"
+    pattern = "^[A-a-zA-Z0-9]"
     if re.match(pattern, username):
         return True
     return False
