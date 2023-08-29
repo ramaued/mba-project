@@ -81,7 +81,7 @@ def sign_up():
                             st.warning('Username sudah dipakai!')
 
                     else:
-                        st.warning('Username tidak valid!')
+                        st.warning('Username tidak valid! Gunakan huruf kecil atau angka, dan maskimal 14 karakter.')
                 else:
                     st.warning('Email sudah dipakai!')
             else:
