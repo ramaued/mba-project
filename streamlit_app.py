@@ -48,11 +48,11 @@ try:
                         support_helper = ''' > Support(A) = (Jumlah transaksi mengandung A)/(Transaksi Total) '''
                         confidence_helper = ''' > Confidence(A->B) = Support(AUB)/Support(A)') '''
 
-                        support = st.slider("Masukkan nilai minimal support", min_value=0.001, max_value=0.009, value=0.003, help=support_helper)
+                        support = st.slider("Masukkan nilai minimal support", min_value=0.001, max_value=0.9, value=0.003, help=support_helper)
 
                         st.markdown("\n")
                             
-                        confidence = st.slider("Masukkan nilai minimal confidence", min_value=0.01, max_value=0.09, value=0.02, help=confidence_helper)
+                        confidence = st.slider("Masukkan nilai minimal confidence", min_value=0.1, max_value=0.9, value=0.2, help=confidence_helper)
 
                         st.markdown("---")
                         Authenticator.logout('Log Out', 'sidebar')
